@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Jonathas Batista</span></a>
+        
+        <ul class="nav-links">
+            <li>
+                <a href="#about">Sobre</a>
+            </li>
+            <li>
+                <a href="#experience">Experiências</a>
+            </li>
+            <li>
+                <a href="#projects">Projetos</a>
+            </li>
+            <li>
+                <a href="#contact">Contato</a>
+            </li>
+        </ul>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <button class="visit-btn" onclick="window.location.href='https://github.com/jonathasbatista'">Visitar Github</button>
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="images/perfil.png" alt="">
+
+            <div class="info-box">
+                <div class="text">
+                    <h3>Olá, eu sou</h3>
+                    <h1>Jonathas Batista</h1>
+                    <span>Desenvolvedor de Software</span>
+                </div>
+
+                <div class="btn-group">
+                    <div class="btn"><a href="curriculo.pdf" download>Baixar Currículo</a></div>
+                    <div class="btn"><a href="#contact">Contato</a></div>
+                </div>
+
+                <div class="socials">
+                    <a href="https://github.com/jonathasbatista" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jonathas-batista/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section id="experience" class="experience">
+        <h2 class="section-title">Experiências</h2>
+
+        <div class="experience-info">
+
+            <div class="grid">
+                <div class="grid-card">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <span>Operador Logistico</span>
+                    <h3>1 Ano</h3>
+                    <p>Realizava o contato com clientes e entregadores para resolver questões logísticas dos nossos restaurantes parceiros.</p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <span>Auxiliar Administrativo</span>
+                    <h3>1 Ano e 2 Meses</h3>
+                    <p>Realizava o contato com clientes diariamente, solucionando problemas de instalação, reagendando visitas e cancelando serviços.</p>
+                </div>
+            </div>
+
+            <img src="images/perfil.jpeg" alt="">
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-title">Projetos Recentes</h2>
+
+        <div class="projects-grid">
+            <div class="projects-card">
+                <img src="project-1.png" alt="">
+                <h3>BookStore</h3>
+                <P>API RESTful em Java com Spring Boot, seguindo o padrão MVC, para gerenciar livros, autores, editoras e avaliações. Utiliza PostgreSQL e JPA para persistência de dados.</P>
+                <div class="btn-group">
+                    <div class="btn"><a href="https://jonathasbatista.github.io/alura-plus/" target="_blank">Live</a></div>
+                    <div class="btn"><a href="https://github.com/jonathasbatista/bookstore" target="_blank">Github</a></div>
+                </div>
+            </div>
+
+            <div class="projects-card">
+                <img src="project-2.png" alt="">
+                <h3>Produto API</h3>
+                <P>API RESTful desenvolvida com Java e Spring Boot para cadastro e gerenciamento de produtos. Estruturada em MVC, utilizando JPA e PostgreSQL para persistência dos dados.</P>
+                <div class="btn-group">
+                    <div class="btn"><a href="https://jonathasbatista.github.io/alura-plus/" target="_blank">Live</a></div>
+                    <div class="btn"><a href="https://github.com/jonathasbatista/product-api" target="_blank">Github</a></div>
+                </div>
+            </div>
+
+            <div class="projects-card">
+                <img src="project-3.png" alt="">
+                <h3>Alura Plus</h3>
+                <P>Página responsiva desenvolvida com HTML e CSS com base no curso "Alura Plus". Apresenta um layout moderno e adaptável para diferentes dispositivos, com foco em prática de design responsivo.</P>
+                <div class="btn-group">
+                    <div class="btn"><a href="https://jonathasbatista.github.io/alura-plus/" target="_blank">Live</a></div>
+                    <div class="btn"><a href="https://github.com/jonathasbatista/alura-plus" target="_blank">Github</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="input-box">
+          <h2 class="section-title">Entre em Contato</h2>
+          <form action="https://formsubmit.co/jonathasgon99@gmail.com" method="POST">
+            <div class="input">
+              <input type="email" name="email" placeholder="exemplo@gmail.com" required>
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+          </form>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="#about">Sobre</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experiências</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projetos</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contato</a>
+            </li>
+        </ul>
+
+        <p class="copyright">© All Rights Reserved | Jonathas Batista</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
